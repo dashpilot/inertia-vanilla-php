@@ -39,6 +39,53 @@ This implementation bridges your vanilla PHP backend with a Vue.js frontend:
 -   **Production-ready**: Easy build process for deployment
 -   **Familiar patterns**: Use the same mental model as larger frameworks
 
+## Installation
+
+Get started quickly by cloning the repository:
+
+```bash
+# Clone the repository using degit (no git history)
+npx degit dashpilot/inertia-vanilla-php my-project
+
+# Navigate to the project directory
+cd my-project
+
+# Install PHP dependencies
+composer install
+
+# Install JavaScript dependencies
+npm install
+```
+
+## Usage
+
+### Development
+
+Run both the Vite dev server and PHP server concurrently:
+
+```bash
+# Start both servers with a single command
+npm run dev
+```
+
+This will start:
+
+-   PHP development server at http://localhost:8000
+-   Vite dev server at http://localhost:3000 (used for assets)
+
+You should always access your app through the PHP server at http://localhost:8000.
+
+### Production
+
+Build your assets for production:
+
+```bash
+# Build optimized assets
+npm run build
+```
+
+Then deploy your application to your production server. In production, all assets are served directly from the `public/assets` directory without needing the Vite server.
+
 ## Getting Started
 
 See the included documentation to get up and running with Inertia for Vanilla PHP in minutes. A complete single-page application with zero complex dependencies.
