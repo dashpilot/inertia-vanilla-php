@@ -2,6 +2,8 @@
 
 A lightweight implementation of Inertia.js with plain PHP. No frameworks required.
 
+This version uses Vue, but there's also a [Svelte 5 version](https://github.com/dashpilot/inertia-vanilla-php-svelte)
+
 ## Why?
 
 Modern PHP comes with many powerful features built-in:
