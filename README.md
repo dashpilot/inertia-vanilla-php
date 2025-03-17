@@ -59,6 +59,8 @@ Build your assets for production:
 npm run build
 ```
 
+Set `$isProduction` in `config.php` to true
+
 Then deploy your application to your production server. In production, all assets are served directly from the `public/assets` directory.
 
 ## How It Works
