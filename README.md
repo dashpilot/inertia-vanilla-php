@@ -90,6 +90,26 @@ Then deploy your application to your production server. In production, all asset
 
 See the included documentation to get up and running with Inertia for Vanilla PHP in minutes. A complete single-page application with zero complex dependencies.
 
+## Philosophy
+
+This project embraces a minimalist approach to web development. In today's framework-heavy world, it's easy to forget how capable vanilla PHP can be on its own.
+
+The philosophy is simple:
+
+-   **Use what PHP gives you** - PHP already includes powerful tools for sessions, file handling, and database connections (PDO)
+-   **Add only what you need** - A router (bramus/router) and a template system (Inertia.js + Vue) are all you really need
+-   **Avoid unnecessary abstractions** - Frameworks often add layers of complexity that aren't always necessary
+
+With this approach, you get:
+
+1. **Simplicity** - Understand your entire codebase without diving through framework internals
+2. **Control** - Direct access to underlying PHP functionality without abstraction layers
+3. **Performance** - Minimal overhead means faster execution and less memory usage
+4. **Maintainability** - Fewer dependencies mean fewer potential breaking changes
+5. **Educational value** - Learn how things actually work under the hood
+
+This setup is perfect for developers who prefer to understand every line of code in their application and want to avoid framework lock-in while still delivering modern user experiences.
+
 ## Why Not Use a Framework?
 
 Frameworks are excellent for complex applications, but they come with overhead:
