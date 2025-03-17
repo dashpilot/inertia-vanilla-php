@@ -1,0 +1,25 @@
+{
+    "name": "inertia-vanilla-php",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "dev:vite": "vite",
+        "dev:php": "php -S localhost:8000 -t public",
+        "dev": "concurrently \"npm run dev:vite\" \"npm run dev:php\"",
+        "build": "vite build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "@inertiajs/vue3": "^2.0.5",
+        "@vitejs/plugin-vue": "^5.2.2",
+        "@vue/compiler-sfc": "^3.5.13",
+        "vite": "^6.2.2",
+        "vue": "^3.5.13"
+    },
+    "devDependencies": {
+        "concurrently": "^9.1.2"
+    }
+}
